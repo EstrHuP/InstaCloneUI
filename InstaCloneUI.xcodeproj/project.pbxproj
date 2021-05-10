@@ -13,6 +13,12 @@
 		C7822C212649353300EBC261 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7822C202649353300EBC261 /* Preview Assets.xcassets */; };
 		C7822C2C2649353300EBC261 /* InstaCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7822C2B2649353300EBC261 /* InstaCloneUITests.swift */; };
 		C7822C372649353400EBC261 /* InstaCloneUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7822C362649353400EBC261 /* InstaCloneUIUITests.swift */; };
+		C7822C49264943CE00EBC261 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7822C48264943CE00EBC261 /* NavView.swift */; };
+		C7822C5226494F0900EBC261 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7822C5126494F0900EBC261 /* NewsView.swift */; };
+		C7822C5B2649510B00EBC261 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7822C5A2649510B00EBC261 /* Person.swift */; };
+		C7822C6726495ABA00EBC261 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7822C6626495ABA00EBC261 /* StoriesView.swift */; };
+		C7822C702649622600EBC261 /* PersonHeaderPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7822C6F2649622600EBC261 /* PersonHeaderPost.swift */; };
+		C7822C7B26496BEF00EBC261 /* PersonNavBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7822C7A26496BEF00EBC261 /* PersonNavBottomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		C7822C322649353400EBC261 /* InstaCloneUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaCloneUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7822C362649353400EBC261 /* InstaCloneUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCloneUIUITests.swift; sourceTree = "<group>"; };
 		C7822C382649353400EBC261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7822C48264943CE00EBC261 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		C7822C5126494F0900EBC261 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		C7822C5A2649510B00EBC261 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C7822C6626495ABA00EBC261 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
+		C7822C6F2649622600EBC261 /* PersonHeaderPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonHeaderPost.swift; sourceTree = "<group>"; };
+		C7822C7A26496BEF00EBC261 /* PersonNavBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonNavBottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +107,11 @@
 		C7822C182649353200EBC261 /* InstaCloneUI */ = {
 			isa = PBXGroup;
 			children = (
+				C7822C6E2649621700EBC261 /* PeopleContent */,
+				C7822C6526495AA900EBC261 /* Stories */,
+				C7822C59264950B400EBC261 /* Models */,
+				C7822C5026494EFB00EBC261 /* News */,
+				C7822C47264943AE00EBC261 /* Nav */,
 				C7822C192649353200EBC261 /* InstaCloneUIApp.swift */,
 				C7822C1B2649353200EBC261 /* ContentView.swift */,
 				C7822C1D2649353300EBC261 /* Assets.xcassets */,
@@ -128,6 +145,47 @@
 				C7822C382649353400EBC261 /* Info.plist */,
 			);
 			path = InstaCloneUIUITests;
+			sourceTree = "<group>";
+		};
+		C7822C47264943AE00EBC261 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				C7822C48264943CE00EBC261 /* NavView.swift */,
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		C7822C5026494EFB00EBC261 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				C7822C5126494F0900EBC261 /* NewsView.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		C7822C59264950B400EBC261 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C7822C5A2649510B00EBC261 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C7822C6526495AA900EBC261 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				C7822C6626495ABA00EBC261 /* StoriesView.swift */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		C7822C6E2649621700EBC261 /* PeopleContent */ = {
+			isa = PBXGroup;
+			children = (
+				C7822C6F2649622600EBC261 /* PersonHeaderPost.swift */,
+				C7822C7A26496BEF00EBC261 /* PersonNavBottomView.swift */,
+			);
+			path = PeopleContent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +317,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7822C7B26496BEF00EBC261 /* PersonNavBottomView.swift in Sources */,
+				C7822C5B2649510B00EBC261 /* Person.swift in Sources */,
+				C7822C49264943CE00EBC261 /* NavView.swift in Sources */,
+				C7822C702649622600EBC261 /* PersonHeaderPost.swift in Sources */,
+				C7822C6726495ABA00EBC261 /* StoriesView.swift in Sources */,
+				C7822C5226494F0900EBC261 /* NewsView.swift in Sources */,
 				C7822C1C2649353200EBC261 /* ContentView.swift in Sources */,
 				C7822C1A2649353200EBC261 /* InstaCloneUIApp.swift in Sources */,
 			);
