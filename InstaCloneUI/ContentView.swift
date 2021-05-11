@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     let people: [Person] = [
         Person(name: "melenasa", avatar: "avatar-boy-long-hair", imagePost: "post-pokemon"),
-        Person(name: "trizte", avatar: "avatar-girl", imagePost: "post-covid"),
+        Person(name: "marijoze", avatar: "avatar-girl", imagePost: "post-covid"),
         Person(name: "peasoBarba", avatar: "avatar-boy-beard", imagePost: "post-oliver")
     ]
     
@@ -43,7 +43,8 @@ struct ContentView: View {
                                             .aspectRatio(contentMode: .fill)
                                             .padding(.bottom, 5)
                                         
-                                        PersonNavBottomView(colWidth: colWidth)
+                                            
+                                        PersonFooterPost(person: person, colWidth: colWidth)
                                     }
                                 }
                             }

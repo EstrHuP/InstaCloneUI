@@ -24,7 +24,8 @@ struct NavView: View {
             Image(systemName: "paperplane")
 //                .resizable()
 //                .aspectRatio(contentMode: .fit)
-//                .frame(width: 12)
+                .myStylePrimary()
+                .frame(width: 20)
                 .rotationEffect(.degrees(12))
                 .padding(.trailing, 20)
         }

@@ -15,11 +15,12 @@ struct NewsView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 20)
                 .rotationEffect(.degrees(20))
+            
             Text("Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.")
-                .font(.system(size: 12))
+                .textStylePrimary()
+            
             Image(systemName: "xmark")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
+                .myStylePrimary()
                 .frame(width: 12)
                 .foregroundColor(.gray)
         }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PersonNavBottomView: View {
+struct FooterBarPostView: View {
     var colWidth: CGFloat
     
     var body: some View {
@@ -18,39 +18,37 @@ struct PersonNavBottomView: View {
         ]) {
             HStack {
                 Image(systemName: "heart")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
+                    .myStylePrimary()
                     .frame(width: 20)
+                    .padding(.trailing, 10)
                     .padding(.top, -8)
                     .foregroundColor(.gray)
                 Image(systemName: "message")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
+                    .myStylePrimary()
                     .frame(width: 20)
                     .rotation3DEffect(
                         .degrees(180),
                         axis: (x: 0, y: 1, z: 0)
                     )
+                    .padding(.trailing, 10)
                     .padding(.top, -8)
                     .foregroundColor(.gray)
                 Image(systemName: "paperplane")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
+                    .myStylePrimary()
                     .frame(width: 20)
                     .rotationEffect(.degrees(12))
+                    .padding(.trailing, 10)
                     .padding(.top, -8)
                     .foregroundColor(.gray)
-                
             }
             Spacer()
             
             Image(systemName: "bookmark")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
+                .myStylePrimary()
                 .frame(width: 15)
-                .padding(.trailing, 10)
                 .foregroundColor(.gray)
-                .padding(.trailing, 30)
+                .padding(.trailing, 45)
+                .padding(.top, -8)
         }
         .padding(.leading, 10)
         .padding(.trailing, 10)

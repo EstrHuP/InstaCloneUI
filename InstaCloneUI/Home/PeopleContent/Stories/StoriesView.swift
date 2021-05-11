@@ -35,21 +35,38 @@ struct StoriesView: View {
                 //People stories
                 ForEach(people, id: \.id) { person in
                     VStack {
-                        Image(person.avatar)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 55)
-                            .clipShape(Circle())
-                            .overlay(Circle()
-                                        .stroke(Color.black,
-                                                lineWidth: 2))
+                        PersonAvatarView(person: person , width: 60, lineWidth: 2 )
                         Text(person.name)
-                            .font(.system(size: 12))
+                            .textStylePrimary()
                     }
                     .padding(.trailing, 10)
                 }
             }
             .padding(.bottom, 15)
+        }
+    }
+}
+
+struct PersonAvatarView: View {
+    var person: Person
+    var width: CGFloat
+    var lineWidth: CGFloat
+    
+    var body: some View {
+        ZStack {
+            Rectangle()
+                .frame(width: width + 7, height: width + 7)
+                .background(Color("PrimaryColor"))
+                .clipShape(Circle())
+            
+            Image(person.avatar)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: width)
+                .clipShape(Circle())
+                .overlay(Circle()
+                            .stroke(Color("PrimaryColorInvert" ), lineWidth: lineWidth)
+                )
         }
     }
 }

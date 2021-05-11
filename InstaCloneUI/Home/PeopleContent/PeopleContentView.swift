@@ -36,8 +36,6 @@ struct PersonHeaderPost: View {
                 .frame(width: 15)
                 .padding(.trailing, 10)
         }
-        .padding(.leading, 10)
-        .padding(.trailing, 10)
     }
 }
 
