@@ -19,9 +19,9 @@ struct PersonFooterPost: View {
                 .textStylePrimary()
             HStack {
                 HStack {
-                    Text("superkk")
+                    Text("programming_sl")
                         .textStylePrimary()
-                    Text("hellow")
+                    Text("Do you like my bulbasaur?")
                         .textStyleSecondary()
                 }
                 Spacer()

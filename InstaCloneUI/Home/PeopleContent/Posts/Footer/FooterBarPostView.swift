@@ -52,6 +52,5 @@ struct FooterBarPostView: View {
         }
         .padding(.leading, 10)
         .padding(.trailing, 10)
-        .padding(.bottom, 15)
     }
 }

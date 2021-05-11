@@ -24,6 +24,7 @@
 		C7FB060D264A6F150089C54E /* MiniCommentsPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB060C264A6F150089C54E /* MiniCommentsPostView.swift */; };
 		C7FB0613264A6FCC0089C54E /* PersonFooterPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB0612264A6FCC0089C54E /* PersonFooterPost.swift */; };
 		C7FB061C264A802E0089C54E /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB061B264A802E0089C54E /* TextExtension.swift */; };
+		C7FB0625264ACB1F0089C54E /* ContentPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FB0624264ACB1F0089C54E /* ContentPostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		C7FB060C264A6F150089C54E /* MiniCommentsPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCommentsPostView.swift; sourceTree = "<group>"; };
 		C7FB0612264A6FCC0089C54E /* PersonFooterPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFooterPost.swift; sourceTree = "<group>"; };
 		C7FB061B264A802E0089C54E /* TextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtension.swift; sourceTree = "<group>"; };
+		C7FB0624264ACB1F0089C54E /* ContentPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,8 +221,9 @@
 		C7822C8B2649851E00EBC261 /* Posts */ = {
 			isa = PBXGroup;
 			children = (
+				C7FB0623264ACAA90089C54E /* Header */,
 				C7FB0611264A6FA40089C54E /* Footer */,
-				C7822C6F2649622600EBC261 /* PersonHeaderPost.swift */,
+				C7FB0624264ACB1F0089C54E /* ContentPostView.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -249,6 +252,14 @@
 				C7FB061B264A802E0089C54E /* TextExtension.swift */,
 			);
 			path = Text;
+			sourceTree = "<group>";
+		};
+		C7FB0623264ACAA90089C54E /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				C7822C6F2649622600EBC261 /* PersonHeaderPost.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +401,7 @@
 				C7822C5226494F0900EBC261 /* NewsView.swift in Sources */,
 				C7822C1C2649353200EBC261 /* ContentView.swift in Sources */,
 				C7822C872649819A00EBC261 /* ChangeImageColor.swift in Sources */,
+				C7FB0625264ACB1F0089C54E /* ContentPostView.swift in Sources */,
 				C7822C82264980AC00EBC261 /* ImageExtension.swift in Sources */,
 				C7FB061C264A802E0089C54E /* TextExtension.swift in Sources */,
 				C7822C1A2649353200EBC261 /* InstaCloneUIApp.swift in Sources */,

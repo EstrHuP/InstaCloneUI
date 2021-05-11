@@ -34,19 +34,7 @@ struct ContentView: View {
                                 StoriesView(people: people)
                                  
                                 //Posts
-                                LazyVStack(alignment: .leading) {
-                                    ForEach(people, id: \.id) { person in
-                                        PersonHeaderPost(people: person)
-                                        
-                                        Image(person.imagePost)
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fill)
-                                            .padding(.bottom, 5)
-                                        
-                                            
-                                        PersonFooterPost(person: person, colWidth: colWidth)
-                                    }
-                                }
+                                ContentPostView(people: people, colWidth: colWidth)
                             }
                         }
                     }
