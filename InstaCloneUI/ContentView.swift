@@ -25,7 +25,7 @@ struct ContentView: View {
                         NavView(colWidth: colWidth)
                             .padding(.bottom, 15)
                         
-                        ScrollView {
+                        ScrollView.init(.vertical, showsIndicators: false, content: {
                             VStack(alignment: .leading) {
                                 //News
                                 NewsView()
@@ -36,7 +36,7 @@ struct ContentView: View {
                                 //Posts
                                 ContentPostView(people: people, colWidth: colWidth)
                             }
-                        }
+                        })
                     }
                     //Hide default navigationBar
                     .navigationBarHidden(true)

@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentPostView: View {
     var people: [Person]
     var colWidth: CGFloat
+    @State var clickedOnMe: Bool = false
     
     var body: some View {
         LazyVStack(alignment: .leading) {
@@ -22,7 +23,12 @@ struct ContentPostView: View {
                     .padding(.bottom, 5)
                 
                 
-                PersonFooterPost(person: person, colWidth: colWidth)
+                PersonFooterPost(person: person, colWidth: colWidth, clickedOut: $clickedOnMe)
+            }
+        }
+        .onTapGesture {
+            if self.clickedOnMe == false {
+                self.clickedOnMe = true
             }
         }
     }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C73FCCED2664E5B30024CB83 /* PersonAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FCCEC2664E5B30024CB83 /* PersonAvatarView.swift */; };
+		C7469FD0265F7FCE00C8DE06 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7469FCF265F7FCE00C8DE06 /* CustomTextField.swift */; };
 		C7822C1A2649353200EBC261 /* InstaCloneUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7822C192649353200EBC261 /* InstaCloneUIApp.swift */; };
 		C7822C1C2649353200EBC261 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7822C1B2649353200EBC261 /* ContentView.swift */; };
 		C7822C1E2649353300EBC261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7822C1D2649353300EBC261 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C73FCCEC2664E5B30024CB83 /* PersonAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAvatarView.swift; sourceTree = "<group>"; };
+		C7469FCF265F7FCE00C8DE06 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C7822C162649353200EBC261 /* InstaCloneUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCloneUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7822C192649353200EBC261 /* InstaCloneUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCloneUIApp.swift; sourceTree = "<group>"; };
 		C7822C1B2649353200EBC261 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				C7822C6626495ABA00EBC261 /* StoriesView.swift */,
+				C73FCCEC2664E5B30024CB83 /* PersonAvatarView.swift */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				C7FB061B264A802E0089C54E /* TextExtension.swift */,
+				C7469FCF265F7FCE00C8DE06 /* CustomTextField.swift */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 			files = (
 				C7822C7B26496BEF00EBC261 /* FooterBarPostView.swift in Sources */,
 				C7822C5B2649510B00EBC261 /* Person.swift in Sources */,
+				C73FCCED2664E5B30024CB83 /* PersonAvatarView.swift in Sources */,
 				C7822C49264943CE00EBC261 /* NavView.swift in Sources */,
 				C7822C702649622600EBC261 /* PersonHeaderPost.swift in Sources */,
 				C7FB060D264A6F150089C54E /* MiniCommentsPostView.swift in Sources */,
@@ -405,6 +412,7 @@
 				C7822C82264980AC00EBC261 /* ImageExtension.swift in Sources */,
 				C7FB061C264A802E0089C54E /* TextExtension.swift in Sources */,
 				C7822C1A2649353200EBC261 /* InstaCloneUIApp.swift in Sources */,
+				C7469FD0265F7FCE00C8DE06 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

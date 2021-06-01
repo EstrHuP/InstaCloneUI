@@ -46,27 +46,3 @@ struct StoriesView: View {
         }
     }
 }
-
-struct PersonAvatarView: View {
-    var person: Person
-    var width: CGFloat
-    var lineWidth: CGFloat
-    
-    var body: some View {
-        ZStack {
-            Rectangle()
-                .frame(width: width + 7, height: width + 7)
-                .background(Color("PrimaryColor"))
-                .clipShape(Circle())
-            
-            Image(person.avatar)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: width)
-                .clipShape(Circle())
-                .overlay(Circle()
-                            .stroke(Color("PrimaryColorInvert" ), lineWidth: lineWidth)
-                )
-        }
-    }
-}

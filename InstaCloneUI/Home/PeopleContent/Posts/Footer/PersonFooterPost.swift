@@ -10,6 +10,7 @@ import SwiftUI
 struct PersonFooterPost: View {
     var person: Person
     var colWidth: CGFloat
+    @Binding var clickedOut: Bool
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -35,7 +36,7 @@ struct PersonFooterPost: View {
                 .textStyleTertiary()
                 .padding(.bottom, 3)
             
-            MiniCommentsPostView(person: person)
+            MiniCommentsPostView(person: person, clickedOut: $clickedOut)
             
             Text("12 minutes ago")
                 .textStyleTertiary()

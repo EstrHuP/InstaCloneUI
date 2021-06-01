@@ -12,7 +12,7 @@ struct PersonHeaderPost: View {
     
     var body: some View {
         HStack {
-            PersonAvatarView(person: people, width: 30, lineWidth: 1)
+            PersonAvatarView(person: people, width: 30, lineWidth: 2)
             VStack(alignment: .leading) {
                 Text(people.name)
                     .textStylePrimary()
