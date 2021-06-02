@@ -20,26 +20,7 @@ struct ContentView: View {
             
             TabView {
                 NavigationView {
-                    VStack {
-                        //Nav (top)
-                        NavView(colWidth: colWidth)
-                            .padding(.bottom, 15)
-                        
-                        ScrollView.init(.vertical, showsIndicators: false, content: {
-                            VStack(alignment: .leading) {
-                                //News
-                                NewsView()
-                                
-                                //Stories
-                                StoriesView(people: people)
-                                 
-                                //Posts
-                                ContentPostView(people: people, colWidth: colWidth)
-                            }
-                        })
-                    }
-                    //Hide default navigationBar
-                    .navigationBarHidden(true)
+                    HomeView(people: people, colWidth: colWidth)
                 }
                 .tabItem {
                     Label(

@@ -24,6 +24,9 @@ struct ContentPostView: View {
                 
                 
                 PersonFooterPost(person: person, colWidth: colWidth, clickedOut: $clickedOnMe)
+                    
+                    .padding(.leading, 10)
+                    .padding(.trailing, 10)
             }
         }
         .onTapGesture {

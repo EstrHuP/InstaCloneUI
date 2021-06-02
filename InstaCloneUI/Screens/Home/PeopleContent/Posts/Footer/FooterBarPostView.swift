@@ -16,11 +16,10 @@ struct FooterBarPostView: View {
             GridItem(.fixed(colWidth)),
             GridItem(.fixed(colWidth), alignment: .trailing)
         ]) {
-            HStack {
+            HStack(spacing: 10) {
                 Image(systemName: "heart")
                     .myStylePrimary()
                     .frame(width: 20)
-                    .padding(.trailing, 10)
                     .padding(.top, -8)
                     .foregroundColor(.gray)
                 Image(systemName: "message")
@@ -30,14 +29,12 @@ struct FooterBarPostView: View {
                         .degrees(180),
                         axis: (x: 0, y: 1, z: 0)
                     )
-                    .padding(.trailing, 10)
                     .padding(.top, -8)
                     .foregroundColor(.gray)
                 Image(systemName: "paperplane")
                     .myStylePrimary()
                     .frame(width: 20)
                     .rotationEffect(.degrees(12))
-                    .padding(.trailing, 10)
                     .padding(.top, -8)
                     .foregroundColor(.gray)
             }
@@ -47,10 +44,10 @@ struct FooterBarPostView: View {
                 .myStylePrimary()
                 .frame(width: 15)
                 .foregroundColor(.gray)
-                .padding(.trailing, 45)
+                .padding(.trailing, 40)
                 .padding(.top, -8)
         }
-        .padding(.leading, 10)
-        .padding(.trailing, 10)
+//        .padding(.leading, 100)
+//        .padding(.trailing, 100)
     }
 }

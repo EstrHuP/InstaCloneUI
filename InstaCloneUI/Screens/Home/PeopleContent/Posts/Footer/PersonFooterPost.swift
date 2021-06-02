@@ -29,7 +29,7 @@ struct PersonFooterPost: View {
                 Image(systemName: "heart")
                     .myStyleSecondary()
                     .frame(width: 10)
-                    .padding(.trailing, 60)
+//                    .padding(.trailing, 60)
             }
             
             Text("View all 3 comments")
@@ -42,7 +42,7 @@ struct PersonFooterPost: View {
                 .textStyleTertiary()
                 .padding(.bottom, 5)
         }
-        .padding(.leading, 10)
-        .padding(.trailing, 10)
+//        .padding(.leading, 10)
+//        .padding(.trailing, 10)
     }
 }

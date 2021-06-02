@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C73FCCED2664E5B30024CB83 /* PersonAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FCCEC2664E5B30024CB83 /* PersonAvatarView.swift */; };
+		C74452EA26678C7A0075CAD9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74452E926678C7A0075CAD9 /* HomeView.swift */; };
+		C74452F526679C0A0075CAD9 /* WriteCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74452F426679C0A0075CAD9 /* WriteCommentView.swift */; };
+		C74452FE26679CBE0075CAD9 /* EmojiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74452FD26679CBE0075CAD9 /* EmojiButton.swift */; };
 		C7469FD0265F7FCE00C8DE06 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7469FCF265F7FCE00C8DE06 /* CustomTextField.swift */; };
 		C7822C1A2649353200EBC261 /* InstaCloneUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7822C192649353200EBC261 /* InstaCloneUIApp.swift */; };
 		C7822C1C2649353200EBC261 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7822C1B2649353200EBC261 /* ContentView.swift */; };
@@ -48,6 +51,9 @@
 
 /* Begin PBXFileReference section */
 		C73FCCEC2664E5B30024CB83 /* PersonAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAvatarView.swift; sourceTree = "<group>"; };
+		C74452E926678C7A0075CAD9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C74452F426679C0A0075CAD9 /* WriteCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteCommentView.swift; sourceTree = "<group>"; };
+		C74452FD26679CBE0075CAD9 /* EmojiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiButton.swift; sourceTree = "<group>"; };
 		C7469FCF265F7FCE00C8DE06 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C7822C162649353200EBC261 /* InstaCloneUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCloneUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7822C192649353200EBC261 /* InstaCloneUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCloneUIApp.swift; sourceTree = "<group>"; };
@@ -100,6 +106,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C74452F126679BD20075CAD9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C74452FC26679CA60075CAD9 /* Emoji */,
+				C74452F326679BF70075CAD9 /* AddComment */,
+				C7822C59264950B400EBC261 /* Models */,
+				C7822C7F2649809900EBC261 /* Utils */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C74452F226679BE50075CAD9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C7822C8C2649855200EBC261 /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C74452F326679BF70075CAD9 /* AddComment */ = {
+			isa = PBXGroup;
+			children = (
+				C74452F426679C0A0075CAD9 /* WriteCommentView.swift */,
+			);
+			path = AddComment;
+			sourceTree = "<group>";
+		};
+		C74452FC26679CA60075CAD9 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				C74452FD26679CBE0075CAD9 /* EmojiButton.swift */,
+			);
+			path = Emoji;
+			sourceTree = "<group>";
+		};
 		C7822C0D2649353200EBC261 = {
 			isa = PBXGroup;
 			children = (
@@ -123,9 +164,8 @@
 		C7822C182649353200EBC261 /* InstaCloneUI */ = {
 			isa = PBXGroup;
 			children = (
-				C7822C7F2649809900EBC261 /* Utils */,
-				C7822C59264950B400EBC261 /* Models */,
-				C7822C8C2649855200EBC261 /* Home */,
+				C74452F226679BE50075CAD9 /* Screens */,
+				C74452F126679BD20075CAD9 /* Common */,
 				C7822C192649353200EBC261 /* InstaCloneUIApp.swift */,
 				C7822C1B2649353200EBC261 /* ContentView.swift */,
 				C7822C1D2649353300EBC261 /* Assets.xcassets */,
@@ -226,9 +266,9 @@
 		C7822C8B2649851E00EBC261 /* Posts */ = {
 			isa = PBXGroup;
 			children = (
+				C7FB0624264ACB1F0089C54E /* ContentPostView.swift */,
 				C7FB0623264ACAA90089C54E /* Header */,
 				C7FB0611264A6FA40089C54E /* Footer */,
-				C7FB0624264ACB1F0089C54E /* ContentPostView.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -236,6 +276,7 @@
 		C7822C8C2649855200EBC261 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C74452E926678C7A0075CAD9 /* HomeView.swift */,
 				C7822C6E2649621700EBC261 /* PeopleContent */,
 			);
 			path = Home;
@@ -402,16 +443,19 @@
 				C73FCCED2664E5B30024CB83 /* PersonAvatarView.swift in Sources */,
 				C7822C49264943CE00EBC261 /* NavView.swift in Sources */,
 				C7822C702649622600EBC261 /* PersonHeaderPost.swift in Sources */,
+				C74452EA26678C7A0075CAD9 /* HomeView.swift in Sources */,
 				C7FB060D264A6F150089C54E /* MiniCommentsPostView.swift in Sources */,
 				C7FB0613264A6FCC0089C54E /* PersonFooterPost.swift in Sources */,
 				C7822C6726495ABA00EBC261 /* StoriesView.swift in Sources */,
 				C7822C5226494F0900EBC261 /* NewsView.swift in Sources */,
 				C7822C1C2649353200EBC261 /* ContentView.swift in Sources */,
+				C74452FE26679CBE0075CAD9 /* EmojiButton.swift in Sources */,
 				C7822C872649819A00EBC261 /* ChangeImageColor.swift in Sources */,
 				C7FB0625264ACB1F0089C54E /* ContentPostView.swift in Sources */,
 				C7822C82264980AC00EBC261 /* ImageExtension.swift in Sources */,
 				C7FB061C264A802E0089C54E /* TextExtension.swift in Sources */,
 				C7822C1A2649353200EBC261 /* InstaCloneUIApp.swift in Sources */,
+				C74452F526679C0A0075CAD9 /* WriteCommentView.swift in Sources */,
 				C7469FD0265F7FCE00C8DE06 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
