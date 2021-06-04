@@ -13,68 +13,74 @@ struct ContentView: View {
         Person(name: "marijoze", avatar: "avatar-girl", imagePost: "post-covid"),
         Person(name: "peasoBarba", avatar: "avatar-boy-beard", imagePost: "post-oliver")
     ]
+    @AppStorage("status") var logged = false
     
     var body: some View {
         GeometryReader { geometry in
             let colWidth = geometry.size.width / 3
             
-            TabView {
-                NavigationView {
-                    HomeView(people: people, colWidth: colWidth)
-                }
-                .tabItem {
-                    Label(
-                        title: { Text("Home") },
-                        icon: { Image(systemName: "house.fill") }
-                    )
-                }
-                NavigationView {
-                    VStack {
-                        
+            if !logged {
+                LoginView()
+                    .navigationBarHidden(true)
+            } else {
+                TabView {
+                    NavigationView {
+                        HomeView(people: people, colWidth: colWidth)
                     }
-                }
-                
-                .tabItem {
-                    Label(
-                        title: { Text("Search") },
-                        icon: { Image(systemName: "magnifyingglass") }
-                    )
-                }
-                NavigationView {
-                    VStack {
-                        
+                    .tabItem {
+                        Label(
+                            title: { Text("Home") },
+                            icon: { Image(systemName: "house.fill") }
+                        )
                     }
-                }
-                
-                .tabItem {
-                    Label(
-                        title: { Text("Reels") },
-                        icon: { Image(systemName: "video.bubble.left") }
-                    )
-                }
-                NavigationView {
-                    VStack {
-                        
+                    NavigationView {
+                        VStack {
+
+                        }
                     }
-                }
-                
-                .tabItem {
-                    Label(
-                        title: { Text("Likes") },
-                        icon: { Image(systemName: "heart") }
-                    )
-                }
-                NavigationView {
-                    VStack {
-                        
+
+                    .tabItem {
+                        Label(
+                            title: { Text("Search") },
+                            icon: { Image(systemName: "magnifyingglass") }
+                        )
                     }
-                }
-                
-                .tabItem {
-                    Label(
-                        title: { Text("Me") },
-                        icon: { Image(systemName: "person") }
-                    )
+                    NavigationView {
+                        VStack {
+
+                        }
+                    }
+
+                    .tabItem {
+                        Label(
+                            title: { Text("Reels") },
+                            icon: { Image(systemName: "video.bubble.left") }
+                        )
+                    }
+                    NavigationView {
+                        VStack {
+
+                        }
+                    }
+
+                    .tabItem {
+                        Label(
+                            title: { Text("Likes") },
+                            icon: { Image(systemName: "heart") }
+                        )
+                    }
+                    NavigationView {
+                        VStack {
+
+                        }
+                    }
+
+                    .tabItem {
+                        Label(
+                            title: { Text("Me") },
+                            icon: { Image(systemName: "person") }
+                        )
+                    }
                 }
             }
         }

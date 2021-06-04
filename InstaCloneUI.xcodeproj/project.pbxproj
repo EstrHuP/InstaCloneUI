@@ -11,6 +11,7 @@
 		C74452EA26678C7A0075CAD9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74452E926678C7A0075CAD9 /* HomeView.swift */; };
 		C74452F526679C0A0075CAD9 /* WriteCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74452F426679C0A0075CAD9 /* WriteCommentView.swift */; };
 		C74452FE26679CBE0075CAD9 /* EmojiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74452FD26679CBE0075CAD9 /* EmojiButton.swift */; };
+		C744530A2667A8460075CAD9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74453092667A8460075CAD9 /* LoginView.swift */; };
 		C7469FD0265F7FCE00C8DE06 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7469FCF265F7FCE00C8DE06 /* CustomTextField.swift */; };
 		C7822C1A2649353200EBC261 /* InstaCloneUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7822C192649353200EBC261 /* InstaCloneUIApp.swift */; };
 		C7822C1C2649353200EBC261 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7822C1B2649353200EBC261 /* ContentView.swift */; };
@@ -54,6 +55,7 @@
 		C74452E926678C7A0075CAD9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C74452F426679C0A0075CAD9 /* WriteCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteCommentView.swift; sourceTree = "<group>"; };
 		C74452FD26679CBE0075CAD9 /* EmojiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiButton.swift; sourceTree = "<group>"; };
+		C74453092667A8460075CAD9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C7469FCF265F7FCE00C8DE06 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C7822C162649353200EBC261 /* InstaCloneUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCloneUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7822C192649353200EBC261 /* InstaCloneUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCloneUIApp.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		C74452F226679BE50075CAD9 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				C74453082667A8350075CAD9 /* Login */,
 				C7822C8C2649855200EBC261 /* Home */,
 			);
 			path = Screens;
@@ -139,6 +142,14 @@
 				C74452FD26679CBE0075CAD9 /* EmojiButton.swift */,
 			);
 			path = Emoji;
+			sourceTree = "<group>";
+		};
+		C74453082667A8350075CAD9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C74453092667A8460075CAD9 /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		C7822C0D2649353200EBC261 = {
@@ -456,6 +467,7 @@
 				C7FB061C264A802E0089C54E /* TextExtension.swift in Sources */,
 				C7822C1A2649353200EBC261 /* InstaCloneUIApp.swift in Sources */,
 				C74452F526679C0A0075CAD9 /* WriteCommentView.swift in Sources */,
+				C744530A2667A8460075CAD9 /* LoginView.swift in Sources */,
 				C7469FD0265F7FCE00C8DE06 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
